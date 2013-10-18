@@ -19,7 +19,7 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="QBittorrent"
 NAME=qbittorrent-nox
 DAEMON=/usr/bin/$NAME
-DAEMON_ARGS=""
+DAEMON_ARGS="--webui-port=5412"
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/qbittorrent
 USER=pi
