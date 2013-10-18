@@ -9,3 +9,4 @@ sudo smbpasswd -a pi
 sudo cp qbittorrent-nox-daemon /etc/init.d/qbittorrent-nox-daemon
 sudo chmod 755 /etc/init.d/qbittorrent-nox-daemon
 sudo update-rc.d qbittorrent-nox-daemon defaults
+sudo reboot
