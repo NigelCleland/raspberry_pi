@@ -4,6 +4,14 @@ Hi future self, if you're here that means your Raspberry Pi server has most
 likely bonked itself again. Never fear, last time you did this you actually
 sorted your shit out and saved some of the steps you made.
 
+What it gives you:
+
+* Samba already set up
+* qbittorrent with daemon
+* git
+* python pip
+* tvnamer
+
 To use this:
 
 ```
