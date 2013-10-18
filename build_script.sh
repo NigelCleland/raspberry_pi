@@ -28,5 +28,17 @@ git clone git://github.com/tvnamer.git ~/tvnamer
 cd ~/tvnamer
 sudo python setup.py install
 
+# BTSync
+curl http://download-lb.utorrent.com/endpoint/btsync/os/linux-arm/track/stable ~/btsync.tar.gz
+mkdir ~/btsync
+mv ~/btsync.tar.gz ~/btsync
+tar -xf ~/btsync/btsync.tar.gz
+sudo cp ~/btsync/btsync /usr/bin/btsync
+sudo mkdir ~/.sync
+sudo touch ~/.sync/config
+sudo cp ~/raspberry_pi/btsync-daemon /etc/init.d/btsync-daemon
+sudo chmod +x /etc/init.d/btsync-daemon
+sudo update-rc.d btsync-daemon defaults
+
 # Reboot the System
 sudo reboot
