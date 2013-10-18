@@ -35,7 +35,7 @@ mv ~/btsync.tar.gz ~/btsync
 tar -xf ~/btsync/btsync.tar.gz
 sudo cp ~/btsync/btsync /usr/bin/btsync
 sudo mkdir ~/.sync
-sudo touch ~/.sync/config
+cp ~/raspberry_pi/config.json ~/.sync/config.json
 sudo cp ~/raspberry_pi/btsync-daemon /etc/init.d/btsync-daemon
 sudo chmod +x /etc/init.d/btsync-daemon
 sudo update-rc.d btsync-daemon defaults
